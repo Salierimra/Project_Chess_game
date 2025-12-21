@@ -15,6 +15,8 @@ Improve my chess skills through data-driven insights with Power BI visualization
 - What is the ELO distribution of my opponents?
 
 ## Technologies Used
+- Python(numpy,pandas,chess.com API)
+- Power BI 
 
 ## Findings
 

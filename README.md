@@ -1,2 +1,22 @@
-# Project_Chess_game
-Using Chess.com API to collect all my chess games and analyzing the datas using power BI 
+# Chess Game Analysis Project
+
+## Project Description
+Using the Chess.com API to collect all my chess games and analyze the data using Power BI.
+
+## Project Goal
+Improve my chess skills through data-driven insights with Power BI visualization.
+
+## Key Questions
+- Which openings give me the best results?
+- Which openings give me the worst results?
+- Do my results depend on the date?
+- Do my results depend on the time of day?
+- How does my rating evolve over time in classical, rapid, and blitz formats?
+- What is the ELO distribution of my opponents?
+
+## Technologies Used
+
+## Findings
+
+## Data Collection
+Every month using python script which uses chess.com API

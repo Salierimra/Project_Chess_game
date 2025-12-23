@@ -1,13 +1,13 @@
 # Chess Game Analysis Project
 
 ## Project Description
-Using the Chess.com API to collect all my chess games and analyze the data using Power BI(Python-Jupiter Notebook)
+Using the Chess.com API to collect all my chess games and analyze the data using Tableau(Python-Jupiter Notebook)
 EDA + cleaning datas (Python)
 Exporting datas in csv (Python)
-Visualization with Power BI
+Visualization with Tableau
 
 ## Project Goal
-Improve my chess skills through data-driven insights with Power BI visualization.
+Improve my chess skills through data-driven insights with Tableau visualization.
 
 ## Key Questions
 - Which openings give me the best results?

@@ -1,0 +1,2577 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0912.2314                               -->
+<workbook original-version='18.1' source-build='2025.2.3 (20252.25.0912.2314)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Chess_games' inline='true' name='federated.07sjlbp18dtduo1dubvr60r97oes' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Chess_games' name='textscan.0ybjwqh184oqaj1cwzuko00j2tkd'>
+            <connection class='textscan' directory='C:/Users/rasse/_Data_analyst/My Projects/Chess analyse/REDO 122025' filename='Chess_games.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0ybjwqh184oqaj1cwzuko00j2tkd' name='Chess_games.csv' table='[Chess_games#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='fr_BE'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Player white' ordinal='1' />
+            <column datatype='string' name='Player black' ordinal='2' />
+            <column datatype='string' name='Result white' ordinal='3' />
+            <column datatype='string' name='Result black' ordinal='4' />
+            <column datatype='date' name='Date partie' ordinal='5' />
+            <column datatype='datetime' name='Heure partie' ordinal='6' />
+            <column datatype='integer' name='ELO white' ordinal='7' />
+            <column datatype='integer' name='ELO black' ordinal='8' />
+            <column datatype='string' name='Opening' ordinal='9' />
+            <column datatype='string' name='Code Opening' ordinal='10' />
+            <column datatype='boolean' name='Rated' ordinal='11' />
+            <column datatype='string' name='Time control' ordinal='12' />
+            <column datatype='string' name='Type de partie' ordinal='13' />
+            <column datatype='string' name='Result maximilien' ordinal='14' />
+            <column datatype='string' name='Result adv' ordinal='15' />
+            <column datatype='integer' name='ELO maximilien' ordinal='16' />
+            <column datatype='real' name='WDL' ordinal='17' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Chess_games.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;fr_BE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Chess_games.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player white</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Player white]</local-name>
+            <parent-name>[Chess_games.csv]</parent-name>
+            <remote-alias>Player white</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player black</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Player black]</local-name>
+            <parent-name>[Chess_games.csv]</parent-name>
+            <remote-alias>Player black</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Result white</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Result white]</local-name>
+            <parent-name>[Chess_games.csv]</parent-name>
+            <remote-alias>Result white</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Result black</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Result black]</local-name>
+            <parent-name>[Chess_games.csv]</parent-name>
+            <remote-alias>Result black</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date partie</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date partie]</local-name>
+            <parent-name>[Chess_games.csv]</parent-name>
+            <remote-alias>Date partie</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Heure partie</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[Heure partie]</local-name>
+            <parent-name>[Chess_games.csv]</parent-name>
+            <remote-alias>Heure partie</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ELO white</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ELO white]</local-name>
+            <parent-name>[Chess_games.csv]</parent-name>
+            <remote-alias>ELO white</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ELO black</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ELO black]</local-name>
+            <parent-name>[Chess_games.csv]</parent-name>
+            <remote-alias>ELO black</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Opening</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Opening]</local-name>
+            <parent-name>[Chess_games.csv]</parent-name>
+            <remote-alias>Opening</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Code Opening</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Code Opening]</local-name>
+            <parent-name>[Chess_games.csv]</parent-name>
+            <remote-alias>Code Opening</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rated</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Rated]</local-name>
+            <parent-name>[Chess_games.csv]</parent-name>
+            <remote-alias>Rated</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time control</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Time control]</local-name>
+            <parent-name>[Chess_games.csv]</parent-name>
+            <remote-alias>Time control</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type de partie</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type de partie]</local-name>
+            <parent-name>[Chess_games.csv]</parent-name>
+            <remote-alias>Type de partie</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Result maximilien</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Result maximilien]</local-name>
+            <parent-name>[Chess_games.csv]</parent-name>
+            <remote-alias>Result maximilien</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Result adv</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Result adv]</local-name>
+            <parent-name>[Chess_games.csv]</parent-name>
+            <remote-alias>Result adv</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ELO maximilien</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ELO maximilien]</local-name>
+            <parent-name>[Chess_games.csv]</parent-name>
+            <remote-alias>ELO maximilien</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WDL</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WDL]</local-name>
+            <parent-name>[Chess_games.csv]</parent-name>
+            <remote-alias>WDL</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Result maximilien]' role='dimension' type='nominal' />
+      <column caption='Chess_games.csv' datatype='table' name='[__tableau_internal_object_id__].[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]' role='measure' type='quantitative' />
+      <column-instance column='[Result maximilien]' derivation='Attribute' name='[attr:Result maximilien:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Result maximilien]' derivation='None' name='[none:Result maximilien:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='fr_FR' class='hyper' dbname='C:/Users/rasse/AppData/Local/Temp/TableauTemp/#TableauTemp_1sbarsj05xtx7o18njmc11lb232l.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/23/2025 12:13:21 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Chess_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12445</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Player white</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Player white]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Player white</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Chess_games.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3266</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Player black</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Player black]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Player black</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Chess_games.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4114</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Result white</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Result white]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Result white</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Chess_games.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Result black</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Result black]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Result black</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Chess_games.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date partie</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date partie]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date partie</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Chess_games.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1873</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Heure partie</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[Heure partie]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Heure partie</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Chess_games.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>6866</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ELO white</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ELO white]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ELO white</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Chess_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1189</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ELO black</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ELO black]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ELO black</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Chess_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1217</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Opening</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Opening]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Opening</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Chess_games.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1931</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Code Opening</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Code Opening]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Code Opening</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Chess_games.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>253</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rated</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Rated]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rated</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Chess_games.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Time control</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Time control]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Time control</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Chess_games.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type de partie</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type de partie]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Type de partie</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Chess_games.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Result maximilien</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Result maximilien]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Result maximilien</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Chess_games.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Result adv</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Result adv]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Result adv</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Chess_games.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ELO maximilien</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ELO maximilien]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ELO maximilien</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Chess_games.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>933</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WDL</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[WDL]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>WDL</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Chess_games.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Result maximilien:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;checkmated&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;abandoned&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;win&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;stalemate&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;repetition&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;timevsinsufficient&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;timeout&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;agreed&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;resigned&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;insufficient&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[attr:Result maximilien:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;checkmated&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;abandoned&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;win&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;repetition&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;timeout&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;agreed&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;resigned&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;FR&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Chess_games.csv' id='Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D'>
+            <properties context=''>
+              <relation connection='textscan.0ybjwqh184oqaj1cwzuko00j2tkd' name='Chess_games.csv' table='[Chess_games#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='fr_BE'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Player white' ordinal='1' />
+                  <column datatype='string' name='Player black' ordinal='2' />
+                  <column datatype='string' name='Result white' ordinal='3' />
+                  <column datatype='string' name='Result black' ordinal='4' />
+                  <column datatype='date' name='Date partie' ordinal='5' />
+                  <column datatype='datetime' name='Heure partie' ordinal='6' />
+                  <column datatype='integer' name='ELO white' ordinal='7' />
+                  <column datatype='integer' name='ELO black' ordinal='8' />
+                  <column datatype='string' name='Opening' ordinal='9' />
+                  <column datatype='string' name='Code Opening' ordinal='10' />
+                  <column datatype='boolean' name='Rated' ordinal='11' />
+                  <column datatype='string' name='Time control' ordinal='12' />
+                  <column datatype='string' name='Type de partie' ordinal='13' />
+                  <column datatype='string' name='Result maximilien' ordinal='14' />
+                  <column datatype='string' name='Result adv' ordinal='15' />
+                  <column datatype='integer' name='ELO maximilien' ordinal='16' />
+                  <column datatype='real' name='WDL' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Evo_Blitz'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Chess_games' name='federated.07sjlbp18dtduo1dubvr60r97oes' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07sjlbp18dtduo1dubvr60r97oes'>
+            <column datatype='date' name='[Date partie]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[ELO maximilien]' role='measure' type='quantitative' />
+            <column datatype='boolean' name='[Rated]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type de partie]' role='dimension' type='nominal' />
+            <column-instance column='[ELO maximilien]' derivation='Avg' name='[avg:ELO maximilien:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Rated]' derivation='None' name='[none:Rated:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type de partie]' derivation='None' name='[none:Type de partie:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date partie]' derivation='Quarter-Trunc' name='[tqr:Date partie:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Rated:nk]'>
+            <groupfilter function='member' level='[none:Rated:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Type de partie:nk]'>
+            <groupfilter function='member' level='[none:Type de partie:nk]' member='&quot;blitz&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Type de partie:nk]</column>
+            <column>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Rated:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.07sjlbp18dtduo1dubvr60r97oes].[avg:ELO maximilien:qk]' field-type='quantitative' max='1554.40813508921' min='880.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.07sjlbp18dtduo1dubvr60r97oes].[avg:ELO maximilien:qk]</rows>
+        <cols>[federated.07sjlbp18dtduo1dubvr60r97oes].[tqr:Date partie:qk]</cols>
+      </table>
+      <simple-id uuid='{4098C453-9948-42C7-A970-B38B3EA45EC8}' />
+    </worksheet>
+    <worksheet name='Evo_Rapid'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Chess_games' name='federated.07sjlbp18dtduo1dubvr60r97oes' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07sjlbp18dtduo1dubvr60r97oes'>
+            <column datatype='date' name='[Date partie]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[ELO maximilien]' role='measure' type='quantitative' />
+            <column datatype='boolean' name='[Rated]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type de partie]' role='dimension' type='nominal' />
+            <column-instance column='[ELO maximilien]' derivation='Avg' name='[avg:ELO maximilien:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Rated]' derivation='None' name='[none:Rated:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type de partie]' derivation='None' name='[none:Type de partie:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date partie]' derivation='Quarter-Trunc' name='[tqr:Date partie:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Rated:nk]'>
+            <groupfilter function='member' level='[none:Rated:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Type de partie:nk]'>
+            <groupfilter function='member' level='[none:Type de partie:nk]' member='&quot;rapid&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Type de partie:nk]</column>
+            <column>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Rated:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.07sjlbp18dtduo1dubvr60r97oes].[avg:ELO maximilien:qk]' field-type='quantitative' max='1900.0' min='950.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.07sjlbp18dtduo1dubvr60r97oes].[avg:ELO maximilien:qk]</rows>
+        <cols>[federated.07sjlbp18dtduo1dubvr60r97oes].[tqr:Date partie:qk]</cols>
+      </table>
+      <simple-id uuid='{3D395B3E-053D-40BC-9E58-F2BACB8B5CC2}' />
+    </worksheet>
+    <worksheet name='Evo_classical'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Chess_games' name='federated.07sjlbp18dtduo1dubvr60r97oes' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07sjlbp18dtduo1dubvr60r97oes'>
+            <column datatype='date' name='[Date partie]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[ELO maximilien]' role='measure' type='quantitative' />
+            <column datatype='boolean' name='[Rated]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type de partie]' role='dimension' type='nominal' />
+            <column-instance column='[ELO maximilien]' derivation='Avg' name='[avg:ELO maximilien:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Rated]' derivation='None' name='[none:Rated:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type de partie]' derivation='None' name='[none:Type de partie:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date partie]' derivation='Quarter-Trunc' name='[tqr:Date partie:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Rated:nk]'>
+            <groupfilter function='member' level='[none:Rated:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Type de partie:nk]'>
+            <groupfilter function='member' level='[none:Type de partie:nk]' member='&quot;daily&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Type de partie:nk]</column>
+            <column>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Rated:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.07sjlbp18dtduo1dubvr60r97oes].[avg:ELO maximilien:qk]' field-type='quantitative' max='1580.0' min='1400.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07sjlbp18dtduo1dubvr60r97oes].[avg:ELO maximilien:qk]</rows>
+        <cols>[federated.07sjlbp18dtduo1dubvr60r97oes].[tqr:Date partie:qk]</cols>
+      </table>
+      <simple-id uuid='{7AED5AE1-C047-46FF-82DE-298CEF4205A2}' />
+    </worksheet>
+    <worksheet name='Monthly analysis'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Chess_games' name='federated.07sjlbp18dtduo1dubvr60r97oes' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07sjlbp18dtduo1dubvr60r97oes'>
+            <column datatype='date' name='[Date partie]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Result maximilien]' role='dimension' type='nominal' />
+            <column datatype='real' name='[WDL]' role='measure' type='quantitative' />
+            <column-instance column='[Date partie]' derivation='Month' name='[mn:Date partie:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Result maximilien]' derivation='None' name='[none:Result maximilien:nk]' pivot='key' type='nominal' />
+            <column-instance column='[WDL]' derivation='Count' name='[pcto:cnt:WDL:qk:4]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.07sjlbp18dtduo1dubvr60r97oes].[Result maximilien]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.07sjlbp18dtduo1dubvr60r97oes].[pcto:cnt:WDL:qk:4]' scope='rows' value='% victoire par mois' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.07sjlbp18dtduo1dubvr60r97oes].[mn:Date partie:ok]' value='91' />
+            <format attr='font-size' data-class='subtotal' value='8' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07sjlbp18dtduo1dubvr60r97oes].[pcto:cnt:WDL:qk:4]</rows>
+        <cols>[federated.07sjlbp18dtduo1dubvr60r97oes].[mn:Date partie:ok]</cols>
+      </table>
+      <simple-id uuid='{277E5F11-66E3-431D-81DA-EDD2DFBAD5BA}' />
+    </worksheet>
+    <worksheet name='Ouverture B01 Analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Analysis B01 opening all time control rated (top 5)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Chess_games' name='federated.07sjlbp18dtduo1dubvr60r97oes' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07sjlbp18dtduo1dubvr60r97oes'>
+            <column datatype='string' name='[Code Opening]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Opening]' role='dimension' type='nominal' />
+            <column datatype='boolean' name='[Rated]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Result maximilien]' role='dimension' type='nominal' />
+            <column-instance column='[Result maximilien]' derivation='Count' name='[cnt:Result maximilien:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Code Opening]' derivation='None' name='[none:Code Opening:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Opening]' derivation='None' name='[none:Opening:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Rated]' derivation='None' name='[none:Rated:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Result maximilien]' derivation='None' name='[none:Result maximilien:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Code Opening:nk]' context='true'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([Result maximilien])' function='order' user:ui-marker='order'>
+                <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B01&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Opening:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([Result maximilien])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Opening:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Opening:nk]' direction='DESC' using='[federated.07sjlbp18dtduo1dubvr60r97oes].[cnt:Result maximilien:qk]' />
+          <filter class='categorical' column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Rated:nk]'>
+            <groupfilter function='member' level='[none:Rated:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Code Opening:nk]</column>
+            <column>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Opening:nk]</column>
+            <column>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Rated:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.07sjlbp18dtduo1dubvr60r97oes].[cnt:Result maximilien:qk]' scope='rows' value='Effectif' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Opening:nk]' value='225' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Opening:nk]' value='center' />
+            <format attr='vertical-align' field='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Opening:nk]' value='center' />
+            <format attr='font-size' field='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Opening:nk]' value='4' />
+            <format attr='text-orientation' field='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Opening:nk]' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+                <format attr='text-orientation' value='0' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='6' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.6591712236404419' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07sjlbp18dtduo1dubvr60r97oes].[cnt:Result maximilien:qk]</rows>
+        <cols>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Opening:nk]</cols>
+      </table>
+      <simple-id uuid='{896DF7D5-2620-4044-9EA9-4BAD9ADEE292}' />
+    </worksheet>
+    <worksheet name='Ouverture D00 Analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Analysis D00 opening all time control rated</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Chess_games' name='federated.07sjlbp18dtduo1dubvr60r97oes' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07sjlbp18dtduo1dubvr60r97oes'>
+            <column datatype='string' name='[Code Opening]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Opening]' role='dimension' type='nominal' />
+            <column datatype='boolean' name='[Rated]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Result maximilien]' role='dimension' type='nominal' />
+            <column-instance column='[Result maximilien]' derivation='Count' name='[cnt:Result maximilien:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Code Opening]' derivation='None' name='[none:Code Opening:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Opening]' derivation='None' name='[none:Opening:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Rated]' derivation='None' name='[none:Rated:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Result maximilien]' derivation='None' name='[none:Result maximilien:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Code Opening:nk]' context='true'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([Result maximilien])' function='order' user:ui-marker='order'>
+                <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D00&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Opening:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([Result maximilien])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Opening:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Opening:nk]' direction='DESC' using='[federated.07sjlbp18dtduo1dubvr60r97oes].[cnt:Result maximilien:qk]' />
+          <filter class='categorical' column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Rated:nk]'>
+            <groupfilter function='member' level='[none:Rated:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Code Opening:nk]</column>
+            <column>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Opening:nk]</column>
+            <column>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Rated:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.07sjlbp18dtduo1dubvr60r97oes].[cnt:Result maximilien:qk]' scope='rows' value='Effectif' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Opening:nk]' value='224' />
+            <format attr='text-orientation' data-class='subtotal' scope='rows' value='0' />
+            <format attr='wrap' data-class='subtotal' scope='rows' value='auto' />
+            <format attr='font-size' data-class='subtotal' value='8' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='rows' value='6' />
+            <format attr='font-size' scope='cols' value='4' />
+            <format attr='wrap' scope='rows' value='on' />
+            <format attr='text-orientation' scope='rows' value='0' />
+            <format attr='text-orientation' field='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Opening:nk]' value='0' />
+            <format attr='font-size' field='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Opening:nk]' value='2' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-size' value='15' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+                <format attr='text-orientation' value='0' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='6' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07sjlbp18dtduo1dubvr60r97oes].[cnt:Result maximilien:qk]</rows>
+        <cols>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Opening:nk]</cols>
+      </table>
+      <simple-id uuid='{82766881-89FF-489D-B925-5474CE7959E7}' />
+    </worksheet>
+    <worksheet name='Ouverture played classical'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Which opening should i train ?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Chess_games' name='federated.07sjlbp18dtduo1dubvr60r97oes' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07sjlbp18dtduo1dubvr60r97oes'>
+            <column datatype='string' name='[Code Opening]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[F1]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Opening]' role='dimension' type='nominal' />
+            <column datatype='boolean' name='[Rated]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Result maximilien]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type de partie]' role='dimension' type='nominal' />
+            <column caption='Chess_games.csv' datatype='table' name='[__tableau_internal_object_id__].[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Opening]' derivation='Attribute' name='[attr:Opening:nk]' pivot='key' type='nominal' />
+            <column-instance column='[F1]' derivation='Count' name='[cnt:F1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Code Opening]' derivation='None' name='[none:Code Opening:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Rated]' derivation='None' name='[none:Rated:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Result maximilien]' derivation='None' name='[none:Result maximilien:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type de partie]' derivation='None' name='[none:Type de partie:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Code Opening:nk]' direction='DESC' using='[federated.07sjlbp18dtduo1dubvr60r97oes].[__tableau_internal_object_id__].[cnt:Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D:qk]' />
+          <filter class='categorical' column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Rated:nk]'>
+            <groupfilter function='member' level='[none:Rated:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Type de partie:nk]'>
+            <groupfilter function='member' level='[none:Type de partie:nk]' member='&quot;daily&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Type de partie:nk]</column>
+            <column>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Rated:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.07sjlbp18dtduo1dubvr60r97oes].[cnt:F1:qk]' scope='rows' value='Effectif' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Code Opening:nk]' value='37' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]' />
+              <tooltip column='[federated.07sjlbp18dtduo1dubvr60r97oes].[attr:Opening:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07sjlbp18dtduo1dubvr60r97oes].[cnt:F1:qk]</rows>
+        <cols>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Code Opening:nk]</cols>
+      </table>
+      <simple-id uuid='{BF21AE81-C0E2-40D0-A6C5-2E016A095A84}' />
+    </worksheet>
+    <worksheet name='Ouverture played rapid'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Which opening should i train ?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Chess_games' name='federated.07sjlbp18dtduo1dubvr60r97oes' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07sjlbp18dtduo1dubvr60r97oes'>
+            <column datatype='string' name='[Code Opening]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[F1]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Opening]' role='dimension' type='nominal' />
+            <column datatype='boolean' name='[Rated]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Result maximilien]' role='dimension' type='nominal' />
+            <column caption='Chess_games.csv' datatype='table' name='[__tableau_internal_object_id__].[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Opening]' derivation='Attribute' name='[attr:Opening:nk]' pivot='key' type='nominal' />
+            <column-instance column='[F1]' derivation='Count' name='[cnt:F1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Code Opening]' derivation='None' name='[none:Code Opening:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Rated]' derivation='None' name='[none:Rated:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Result maximilien]' derivation='None' name='[none:Result maximilien:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Code Opening:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([__tableau_internal_object_id__].[Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A00&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A01&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A02&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A03&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A04&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A05&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A06&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A07&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A08&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A10&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A11&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A13&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A15&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A16&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A17&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A18&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A20&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A21&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A22&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A23&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A25&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A26&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A28&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A30&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A31&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A34&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A35&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A36&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A38&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A40&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A41&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A42&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A43&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A45&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A46&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A48&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A49&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A50&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A51&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A52&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A53&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A56&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A57&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A65&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A80&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;A84&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B00&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B01&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B02&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B03&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B06&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B07&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B08&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B10&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B12&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B13&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B14&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B15&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B16&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B17&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B18&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B20&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B21&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B22&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B23&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B24&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B27&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B28&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B29&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B30&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B31&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B32&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B33&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B34&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B36&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B38&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B40&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B41&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B42&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B43&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B44&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B45&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B46&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B47&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B48&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B50&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B51&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B52&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B53&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B54&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B56&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B57&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B58&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B62&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B70&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B75&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B77&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B80&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B83&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B86&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B90&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B93&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B94&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B95&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;B98&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C00&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C01&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C02&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C03&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C05&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C07&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C10&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C11&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C15&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C16&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C17&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C20&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C21&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C22&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C23&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C24&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C25&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C26&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C28&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C30&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C31&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C33&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C34&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C35&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C36&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C37&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C38&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C40&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C41&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C42&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C43&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C44&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C45&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C46&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C47&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C48&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C49&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C50&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C51&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C53&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C54&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C55&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C57&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C58&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C60&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C61&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C62&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C63&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C64&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C65&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C66&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C67&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C68&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C69&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C70&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C71&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C72&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C74&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C75&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C77&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C78&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C79&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C84&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C87&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C88&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C91&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;C92&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D00&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D01&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D02&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D03&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D04&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D05&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D06&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D07&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D08&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D10&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D11&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D12&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D13&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D15&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D20&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D21&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D24&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D25&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D26&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D30&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D31&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D32&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D35&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D37&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D38&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D40&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D41&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D43&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D44&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D45&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D46&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D50&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D52&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D53&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D55&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D80&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D85&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;D91&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;E00&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;E10&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;E12&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;E14&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;E20&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;E21&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;E24&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;E27&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;E30&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;E43&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;E46&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;E56&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;E60&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;E61&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;E70&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;E90&quot;' />
+                  <groupfilter function='member' level='[none:Code Opening:nk]' member='&quot;E91&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Code Opening:nk]' direction='DESC' using='[federated.07sjlbp18dtduo1dubvr60r97oes].[__tableau_internal_object_id__].[cnt:Chess_games.csv_84F4D6700EB440F69D1BA7645CAFF73D:qk]' />
+          <filter class='categorical' column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Rated:nk]'>
+            <groupfilter function='member' level='[none:Rated:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Rated:nk]</column>
+            <column>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Code Opening:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.07sjlbp18dtduo1dubvr60r97oes].[cnt:F1:qk]' scope='rows' value='Effectif' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Code Opening:nk]' value='112' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]' />
+              <tooltip column='[federated.07sjlbp18dtduo1dubvr60r97oes].[attr:Opening:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07sjlbp18dtduo1dubvr60r97oes].[cnt:F1:qk]</rows>
+        <cols>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Code Opening:nk]</cols>
+      </table>
+      <simple-id uuid='{CD2578B1-E108-49BD-9BD4-6E6D2875F107}' />
+    </worksheet>
+    <worksheet name='Time analysis'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Chess_games' name='federated.07sjlbp18dtduo1dubvr60r97oes' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07sjlbp18dtduo1dubvr60r97oes'>
+            <column datatype='datetime' name='[Heure partie]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Result maximilien]' role='dimension' type='nominal' />
+            <column datatype='real' name='[WDL]' role='measure' type='quantitative' />
+            <column-instance column='[Result maximilien]' derivation='None' name='[none:Result maximilien:nk]' pivot='key' type='nominal' />
+            <column-instance column='[WDL]' derivation='Count' name='[pcto:cnt:WDL:qk:4]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.07sjlbp18dtduo1dubvr60r97oes].[Result maximilien]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Heure partie]' derivation='Hour-Trunc' name='[thr:Heure partie:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.07sjlbp18dtduo1dubvr60r97oes].[thr:Heure partie:qk]' scope='cols' value='Heure' />
+            <format attr='auto-subtitle' class='0' field='[federated.07sjlbp18dtduo1dubvr60r97oes].[thr:Heure partie:qk]' scope='cols' value='false' />
+            <format attr='title' class='0' field='[federated.07sjlbp18dtduo1dubvr60r97oes].[pcto:cnt:WDL:qk:4]' scope='rows' value='% victoire' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='4' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.9010497331619263' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07sjlbp18dtduo1dubvr60r97oes].[pcto:cnt:WDL:qk:4]</rows>
+        <cols>[federated.07sjlbp18dtduo1dubvr60r97oes].[thr:Heure partie:qk]</cols>
+      </table>
+      <simple-id uuid='{C0C2FFAE-F659-47D6-A907-0819C808B3AC}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='DateTime Analysis'>
+      <style />
+      <size maxheight='860' maxwidth='1650' minheight='560' minwidth='420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97962' id='7' param='horz' type-v2='layout-flow' w='99024' x='488' y='1019'>
+            <zone h='97962' id='5' type-v2='layout-basic' w='89274' x='488' y='1019'>
+              <zone h='48981' id='3' name='Monthly analysis' w='89274' x='488' y='1019'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48981' id='9' name='Time analysis' w='89274' x='488' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97962' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9750' x='89762' y='1019'>
+              <zone h='28408' id='8' name='Monthly analysis' pane-specification-id='0' param='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]' type-v2='color' w='9750' x='89762' y='1019'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='13' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97962' id='12' param='vert' type-v2='layout-flow' w='99024' x='488' y='1019'>
+                <zone fixed-size='280' h='48981' id='3' is-fixed='true' name='Monthly analysis' w='89274' x='488' y='1019'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='28408' id='8' name='Monthly analysis' pane-specification-id='0' param='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]' type-v2='color' w='9750' x='89762' y='1019'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48981' id='9' is-fixed='true' name='Time analysis' w='89274' x='488' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{0F849B4F-A437-40C5-8C57-55A888176205}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Evo ELO'>
+      <style />
+      <size maxheight='860' maxwidth='1650' minheight='560' minwidth='420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='35924' id='3' name='Evo_classical' w='99024' x='488' y='1019'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='32866' id='5' name='Evo_Rapid' w='99024' x='488' y='36943'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='29172' id='6' name='Evo_Blitz' w='99024' x='488' y='69809'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='850' minheight='850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='13' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='35924' id='3' is-fixed='true' name='Evo_classical' w='99024' x='488' y='1019'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='274' h='32866' id='5' is-fixed='true' name='Evo_Rapid' w='99024' x='488' y='36943'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='243' h='29172' id='6' is-fixed='true' name='Evo_Blitz' w='99024' x='488' y='69809'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A33FEB60-9E23-44A8-A5F7-BF3D92D0039A}' />
+    </dashboard>
+    <dashboard name='History Chess' type='storyboard'>
+      <style />
+      <size maxheight='800' maxwidth='1600' minheight='800' minwidth='1600' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='1' param='vert' removable='false' type-v2='layout-flow' w='99000' x='500' y='1000'>
+            <zone h='5250' id='3' type-v2='title' w='99000' x='500' y='1000' />
+            <zone h='12625' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='99000' x='500' y='6250' />
+            <zone h='80125' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='99000' x='500' y='18875'>
+              <flipboard active-id='3' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Evolution de l&apos;ELO' captured-sheet='Evo ELO' id='1' />
+                  <story-point caption='Ouvertures' captured-sheet='Ouvertures jouées' id='2' />
+                  <story-point caption='DateTIme Analysis' captured-sheet='DateTime Analysis' id='3' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{DABCE184-748E-44FF-B24B-C25794C8C252}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Ouvertures jouées'>
+      <style />
+      <size maxheight='860' maxwidth='1650' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97962' id='13' param='horz' type-v2='layout-flow' w='99024' x='488' y='1019'>
+            <zone h='97962' id='7' param='horz' type-v2='layout-flow' w='89274' x='488' y='1019'>
+              <zone h='97962' id='5' type-v2='layout-basic' w='89274' x='488' y='1019'>
+                <zone h='48981' id='9' name='Ouverture played rapid' w='89274' x='488' y='1019'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='48981' id='10' name='Ouverture B01 Analysis' w='44637' x='488' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='48981' id='11' name='Ouverture D00 Analysis' w='44637' x='45125' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97962' id='12' is-fixed='true' param='vert' type-v2='layout-flow' w='9750' x='89762' y='1019'>
+              <zone h='22548' id='14' name='Ouverture D00 Analysis' pane-specification-id='0' param='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]' type-v2='color' w='9750' x='89762' y='1019'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97962' id='17' param='vert' type-v2='layout-flow' w='99024' x='488' y='1019'>
+                <zone fixed-size='280' h='48981' id='9' is-fixed='true' name='Ouverture played rapid' w='89274' x='488' y='1019'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48981' id='10' is-fixed='true' name='Ouverture B01 Analysis' w='44637' x='488' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48981' id='11' is-fixed='true' name='Ouverture D00 Analysis' w='44637' x='45125' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='22548' id='14' name='Ouverture D00 Analysis' pane-specification-id='0' param='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]' type-v2='color' w='9750' x='89762' y='1019'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{9D03467C-4470-497D-9573-A4E8D3B347FE}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Ouverture played classical'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='169'>
+            <card pane-specification-id='0' param='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Code Opening:nk]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Opening:nk]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Rated:nk]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Type de partie:nk]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[yr:Date partie:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{449A356A-DBA6-4A88-984A-1E03F3047CBB}' />
+    </window>
+    <window class='dashboard' maximized='true' name='History Chess'>
+      <viewpoints />
+      <active id='6' />
+      <simple-id uuid='{ACB8C590-DEA9-4341-B590-EA33CBE9B92B}' />
+    </window>
+    <window class='dashboard' hidden='true' name='DateTime Analysis'>
+      <viewpoints>
+        <viewpoint name='Monthly analysis'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Time analysis'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{0900BD21-4D1E-4A62-A754-A6990291B066}' />
+    </window>
+    <window class='dashboard' hidden='true' name='Evo ELO'>
+      <viewpoints>
+        <viewpoint name='Evo_Blitz'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Evo_Rapid'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Evo_classical'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{2A713E47-92AB-442F-8AA6-647ADD5E6EAA}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Evo_Blitz'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Rated:nk]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Type de partie:nk]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[yr:Date partie:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{95ECD6A5-E4F2-4111-B487-317FFFF594FD}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Evo_Rapid'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Rated:nk]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Type de partie:nk]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[yr:Date partie:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{96D7BF19-5200-4FDC-815B-4C6431DD81AB}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Evo_classical'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Rated:nk]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Type de partie:nk]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[yr:Date partie:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C4AB262B-3CEE-4733-8D84-AE68D6B1A6F0}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Monthly analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='169'>
+            <card pane-specification-id='0' param='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[cnt:WDL:ok]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[mn:Date partie:ok]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[yr:Date partie:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BDF08AF3-DBFB-4620-832D-08661453FBD0}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Ouverture B01 Analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='168'>
+            <card pane-specification-id='0' param='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Code Opening:nk]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Opening:nk]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Rated:nk]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{41E73F21-E044-48F2-B641-DC050182B4FB}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Ouverture D00 Analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='169'>
+            <card pane-specification-id='0' param='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Code Opening:nk]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Opening:nk]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Rated:nk]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AAD16E28-9AFC-4B70-B677-50FB3C8C173D}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Ouverture played rapid'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='168'>
+            <card pane-specification-id='0' param='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Code Opening:nk]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Opening:nk]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Rated:nk]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Type de partie:nk]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[yr:Date partie:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{95B6D3D1-7981-49E0-9E82-8453C05E2875}' />
+    </window>
+    <window class='dashboard' hidden='true' name='Ouvertures jouées'>
+      <viewpoints>
+        <viewpoint name='Ouverture B01 Analysis'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Ouverture D00 Analysis'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Ouverture played rapid'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='12' />
+      <simple-id uuid='{1B2A4A6E-7887-4E23-AD2B-E4270EA25D22}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Time analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='169'>
+            <card pane-specification-id='0' param='[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[hr:Heure partie:ok]</field>
+            <field>[federated.07sjlbp18dtduo1dubvr60r97oes].[none:Result maximilien:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{ED1D82D8-559C-4923-A551-A1710FC94F4C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='History Chess' width='192'>
+      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
+      jSQ/ltiCRcMAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Ouverture played classical' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAZzUlEQVR4nO3dx5Mk+XXY8W+68q5NtTfT02N3Zmex2AWXogCIIkUCJA5UCFJIQYLBEw8K
+      icGg/gLooJvMSQeddJQAMqAIMSCJAMSlAma1FDC72J2Z7nHtfbkuX5VWh+rp7tntMtPVdup9
+      LhMx/SrrZVW+zKxf5suf4nmehxA9Sj3vBIQ4T1IAoqdJAYgLzCOX3iKVLXzuL6l0+nP/l0tt
+      sbmTpfU5vUcmndmP0U8iTSFOw/bzj/nBL9Z4+wt3ccs7LKXrfOmtmzz8+D4/vj/P7//ebzK3
+      nOa9d+5Rzyzyvb/6mAGtwOS9L6PUdhm9chNKW2yV4Np4goWlFRLD02Q2lvEci7XNVRT5ESwu
+      qg//13cZeu+bXInDf/mv3+X2SJB1M0iwf4r1J7+AapFEWGfkvW8ymP6QTPLvcF1d4Dvf+xve
+      /p1/zOP7P6Oc28aHxuy9WYy+GZ4/mCOo1en3+xi6fV1OgcTFdf3uPd7/yz/nw48eodpVnqxm
+      SPZHWH0+T75sEQ7qlNQoQ2Gd8Ztvcv+v/zvff/8+V65P8uTRL/FF+/GpLqH+JD7dYDCZxNAU
+      ABTFx9DwgBwBxMXleR6ObYOqouJhOx6GoWNZFpquowKmbeMzDBRFwbYtXE9h9cFPcUbf4dpw
+      GFwX23ExDH1/mQAKgKKcXAE4joPruiiKchKLE+JMHOtHsOM4aJqG69hYjovf50PTNID9f4W4
+      DF75N0ClkOVH/+engMf8owc8nXtItmSeQmpCnL5XLoBQrJ/x4X7AQvf1cW12mlL+8+O0QlwG
+      r1wAZq1CoVAgX6xj1vLsbG/hC4VPIzchTt0r/wiuV8vki2V8gRBBQ6FUs+nvi6Nw8NtAiMvi
+      RIdBpQDEZSMXwkRPkwIQPU0KQPQ0KQDR06QARE+TAhA9TQpA9DQpANHTpABET+uiADzSW6s8
+      XVjBlZYacUkdvwDcOju7NgNBh4106QRTEuLsHP+pEIqfkF5neT1HbCSB4zg4joPnOlT/4zst
+      X+r/g++h9s0c+62FOCldFICC3x/AH4wxPhJH0xoHE1VVoM39dZqmoenyRBZx/rraCkcmphkB
+      6QMWl1ZXBSAbvrjsZBhU9DQpANHTpABETzvVAvA8j08XS8zlnNN8GyGO7XSPAB6MRjVydfdU
+      30aI4zrVAlBUhYhPRorExXWqBeA4Lh9vWeRydapyFiQuoFO9HKtpKr96I3qabyFEV2QUSPQ0
+      KQDR06QARE+TAhA9rauOsNXFpzx89IiqKUM84nLqYhTIo1Cs4PNpFCsmft2P67qAQso31PKV
+      Y54KjgNOHYqbzQMVFeJTx09RiDaOXwCujacaRMJ+zHod8O/dHq3wn2b/rOVL/5Wvn6Si4KSe
+      UPvut5oH+sKE//kHx05RiHa66AgzCPlUdot1xmfCqKqK53koavuzKkVRGvFq+6vEagfLE+K4
+      umqJvHrj1gmmIsTZk92r6GlSAKKnSQGIniYFIHrahSkA23T4b/d32arJcxbF2bkwBaAZKneG
+      DCxpHhNn6MIUgKIoSO+YOGsXpgCqVZv1isdaui5PmxZn5sI8oDMY1Pn1G5HzTkP0mAtzBBDi
+      PEgBiJ4mBSB62vF/A3ge9Xod1/Pw+f1octemuIS66ggrFQssPn5IqmCeXEZCnKEubodWGRhM
+      srmdYjge2J8iSXHbX8lyHAfbtsmoCX44+k+axhmGj2/a9rFTFKKdroZBc1tLJEamUZTGtEdA
+      Rw0xmqah6zo1f4xPE19sGufXdf6pTKUkTlFXW1d4YJyEYZxULkKcua4KwOfznVQeQpwLGboR
+      PU0KQPQ0KQDR06QARE+TAhA9TQpA9DQpANHTpABET5MCED1NCkD0NCkA0dOkAERP66oA7HqF
+      5wtL2PIcE3FJddUR9vjJM4ZHhlBk+xeXVBe3Q1vk0nkMY5FYcopkIvTKHWGO02ZyPQ9s6QgT
+      p6iLAjAYHIzieh6e5x2rI+zFa5pSQJeOMHGKuti6FG7dfQvH9dA0+S0tLqfudq+KgqbJI23F
+      5SW7btHTpABET5MCED1NCkD0NCkA0dOOHAVyrDqmZYMeIOhrM1YvxCV2ZAGUM0t85zt/iTN0
+      i1ujEd5+7yvEg1II4vVzZAFEh2/wrT/8Z2zWI4z1BfD55UxJvJ6OLAC3XmRhdZv/99GPAPjd
+      b36LoajckiBeP0fu2rVAlEF/nYk3v8I714bYyVfPOi8hzkSTcxuPTK5AZnOFsjbI1ZHw2WYl
+      xBlpUgAq4yMDTFy7y1iwzPOtytlmJcQZafrrNjb1JruPf8JHqybXR0JHxmR2NlleWaVut+8B
+      EOIialoAjlmlWCiT7IuQqxzdlLKTyTE2OopP7ggVl1TToZ1ydhsjFGJxYZGxm28Dn50Mw2Og
+      L878g/sMTt9lKO4/1Y6wD1aX+Z9P5pqGzvYP8EdvfwmAv3j4CZ9sbTSN/eqVWf7B7PW2eYrX
+      35EFUNhZ4Plqluvv/D1ujkYxfEdNg+RRr9YxgnH6YoH9ppjT6ghTFAXHa9587HIQ60HLWBRF
+      Os0E0KQAwvEhsps/YWkpQyoZ4p1f+3USn7sSrDI5c/UMUhTi9By5uy5mVtjJVYn0JRkZGZFz
+      fPHaOvIIEB+9xVe/bLJWDRGNBpCWX/G6OrIAlEqa+ysmmrXOsGXwTB/izljgrHMT4tQd/UtQ
+      UXn6yc8olfIsh3V+4w++esZpCXE2ji6A4AB/+if/ghfjKJqMmIjXVJMjgIIuM8CLHiA/b0VP
+      kwIQPU0KQPQ0KQDR06QARE+TAhA97ZQLwKOSSVEulE/3bYQ4pq4KwHPq/OgH72M1+btdzrOz
+      lmZ7bp42d/4LcS66uMTrsfBskeRQEmg0uXy2IUY1fNTzWTzVaMwjtndT6XEaYtw2jTae5+3H
+      eq16AQDPdfdjP9raoGY3K2G4OZCkP3h0S6i4/I5dAJ5jYXseucw2hdIsA5Eg8HJDjFMvoxhB
+      VLOC5YJ/r6XgOA0xaptGG+VQk4uitL59W1HV/dj3F56RqTQ/Ret/+0sMRWOt8xSX1rELQNF8
+      3Lx1m7GxccJ7G//nFh4ZZPbdBCgq7bZ1Ic5D13e5RWPN946KoqDJPUXiApNhUNHTpABET5MC
+      ED3twnS6mKU8uztZ0Pwkp8eQNnxxFi7MEcAIRxkYT1LJF847FdFDLkwBKIpKbnmVwaszsvcX
+      Z+bCFIDneVjoRCL+805F9JALUwCKojB6Q57XKc7WhSkAIc6DFIDoaVIAoqdJAYie1lUB2JZJ
+      tVan9d33QlxcXRSAR2p7i9WFebZzMo2quJy6uBVCIRoJsrC4zOhV35EdYc1cpI4w2sS6biNX
+      03H4fospmgB+5/otArrOdqnIz1aXm8aFDIOvXbsJwHx6h7nUTtPY8WiMX5mYAhrTRG2Vik1j
+      7w6NcH1gsGWO4mXHLwDPoWp6zEyNkMnmiY71A6c3RdJpdYTRJlZVG7mansvP11dbxn7txi10
+      XadkWS1jE4Eg37h1B4CtUqllbH14lF+70piJ51k2zXyLYhmKRLg9PNIyR/GyLo4AKn6fgaoP
+      MtKXOLmMhDhDxy8ARSGW6DvBVIQ4ezIMKnqaFIDoaVIAoqddmI6wV7G7ukSpZBEfHSWaiLSM
+      3Zp7BIafxMQ0gcClXF1xii7lFuFYNVzbwW0zhg/gOCae7SJdNuIol/IUKDo6zeQb18k+b36x
+      qcEjOXuT0dkBtp40Hz8XvetSHgHcepm1Z9sMv3GjbWwtlyafqzB5p32s6D2XsgACiUEmE51c
+      8leIjU0SGzv1lMQldSlPgYQ4KVIAoqdJAYieJgUgelpXBbC1tsT84ydUzddjAiSnXubTH/6Y
+      9h0N4nXR1SjQwPA46vYS2d0qY8lwoxGlg4tTnrfX4NIu1mvfCHNY57HeoVhv/9/tJ4uE+j47
+      30Ejtl2TTSN0L7ZNk6h36P3bNu9waL3afVyHPq+qbbfMI6DpqIqCB1RbTBEFENIbczzYjkvV
+      tJvGqYpCONCItVwXy22+Y9QVFd9eP0jdsXFafA4+TUNXGvvqSptcg7qOggKmiWeazQN1HSUQ
+      6K4AdtaXqWsRZoYieC82kg42Qs9rxLpeJ7HeS/+2COw41jsU+2Ib8cwKdculuLVJrXqbUNDX
+      +H+3Eeu57QvAfYXYgxxfYb3aFdah2H/34/cpW803gD9+9z1m+gbIViv825/8Tcvl/uvf+BqG
+      pvHBwzX+/Xf/b9O46eE4/+Ff/jYAf/Vknp+uLDaNfXd8kn/0xpsA/Odf/C3Lu7mmsf/w9t39
+      rrh/8/4PW94B8Ce/+mVGozGK3/8fFP78L5rGBd59l4E/+9NuCsAhnc7hjziUawNEAj48z+uo
+      I0xVVTRNQ1Xbd4S96Bpr1+WFonQcqyjqQTfaXqziCzPzxXuUpicI7m380Oge0zQNtcXe7AVV
+      e7FebbrXOJxr+063TtdLVZX2XXb7sRqapqF12MHXWK/295O8eP92sYfXq32u6ivHtt8G9joT
+      O1rqkTTeevdLx3/5BRUZ6D/vFMQZklEg0dOkAERPkwIQPU0K4Bg8z8OqVbGt5kOCB7EuZqWC
+      43Qw4uXY1CvVjoZcHcvErMpT+bolBXAMrlUju7bO4v1P2l40M4t5shubrHza+qFaAOVMitzq
+      IutP19pEehQ2N0g/e0B6q9Rx3ifJH/DzW1+cRrsEjUZqX5Lw3/2Vo/92xrm8FjRfEA0L2/ZQ
+      2uyCfZEYdikDWvuZb0KJGMWdFEYo1CZSIRiLsLuVIxgLdJ74CbJMi2zZbPdcsQvBLeZw6kcf
+      raUAjsGuVTBiSYKai9WmAMxSkdjEVdxq+z11tVhl5NZNqpl060DPxTQdxm7PUNhoE3tKXNfF
+      uSznX7bd9HqjFMAxqIaB4jkkb9/C1+YT1Pw+XNth/O7ttsvVfQaOozL+xrU2kY3HQCq+OCOz
+      w50nfoKi0TA+TeXq8GdvHbl4tKExFFXFGP18E9Wl7Ag7b6pmEBvubMPT/SESI+1OaRr80Tj+
+      aAeBikKof6CjZZ6WYrHM386VzzWHTjk7G1R3No78mxwBRE+TAhA9TQpA9DQpgNec53mUU5uk
+      1rY7uk08t7xAPls40QtsTr3CxvxT7A4uBtbzWbYWVjvKtbi1RmYz3VWuXRVAemuNR08XulmE
+      OAO2q2KlNqhZrTdAt15BjyfJPXt6ol1xlUKJwYkEa49W2sbWahYho0pqs/lMOAC4Dp4WoLyy
+      TPvr8c11NQoU7UuylXkKNKY96qjLC3CcxhRF7qtMkdSmeeaVpkjyXmWKpEasY7fvB3gx9ZPb
+      pnfAwzuVqZ/cw1M/7VEUcGtFnFCcgHGwvzuYpurg/bVAiNLzTwmNTXD47nvHcVA8D0XzCMWb
+      7zMDUfXI9QoEDVbnlxi7e/dgvY7IFUDDIp1zmLxzMBx25HppGmYxgzYwiPFSro3YfDjE2shQ
+      01z7EnH6bLu7AvD7D65uqqqK53ltm0EAtA4bRw43xKgn2DjyUjNGmyuZLxostA463TRV66jR
+      R6HzxpFjN/rs8TyL5Y8fMzAzi+N56HvL2G9K0g4+19rWEqmdEoNGDJeD0wNVU9FUjUi/wdRb
+      wabvPxLxH9nos/zRxxjxQerlGoG9lsmjG2Iclj96QHRsEtO09huTjmqIcepF1ueW6Z+axoH9
+      gn2xbT29NsMPvv6bTXO9MzTCre4aYjzWlhYw6ya7pRqJSKDxBXV4bbzT2LadYMeKVQ7FdphD
+      J4tWOs2h8/dX6Hy9lCPeX1F8fOH3vnFEbCOHw9GBkRnujcwcle3nYpvnoOzn8sK1r/z9I5P9
+      /Hpp3Pn611sudz/SH+Otb/x2R7Gtcu1qlsiJK7NMXDn+EoQ4bzIKJHqaFIDoaVIAoqdJAYie
+      JgUgjsUsZPn4B/8b5xI0BVTSm/zyr3985N+kAMSx+GL9DBxxf/1FFBocJd5/9H3mUgDiWDzX
+      xXWc9lfzL4AXebpH3IskBSCOpV7IoRkBctup806lrWp2B18gyG76888flY4wcSyBxAATifPt
+      SutUODlKODl65N+6OgI4lkm5Uu1mEUKcq67uBXo8P4eqQnLqNgNRX/uXCHHBdHEEMNF9Ca5M
+      T1IuFE4uIyHOUBcFYFCv7bKxvkEgHDm5jIQ4Q12cAqncvHWDmukSjZ7P08mE6FZXo0A+fxDf
+      Xk/Mi44wxfN4b3yq9etUDdu2Cel6y1hDU3EcB8/zGA5HWsYmI+H9rqHZvn78LZpSJqIxbNtG
+      URS+MDxKqcVcUgm/vxHr0Xa9NBodbDGfr2VsyDD212ssEm0ZOxaL7a/XjYEkcV/znc1IOLK/
+      Xu+MjVNv0cUW1g1s20ZX1Lbr5bkutufRFwi2jI0F/PvrNRmLt4ydTvTtr9ed5DAj4eYPREoG
+      Q/vr9d74VMspkgKahuM4bT/X0b3PVfE6mv2tM47jdDyVzWnEvmjD66Qr7bxzfZXYy7Re3t5E
+      gZ3EOo6DqqodNbC8Sq6dcl33ZK8DdPIFnWbsq3SPnXeurxL7uq7Xab1/pxRFQfv2t7/97ZNc
+      IJ7H/NwDUjspfJEE68/nWV7bIhYN8WhunkLFZKAvvv+l7m4s8nS7xHB/nEJmg4fPNzDcCk8X
+      FsAXJRL07S3X4cn8HJl8hUR/gueffEjV6Gd7cZ61zRT9g0l0tdFm51hVHj2co2J5xCMBfvLT
+      DxgfG+XJLz+kHhgiFtT333/l+VPSuSylmkN2a4Xl1U1CoQAbG5ssrqwxMjy8H1vLp/joyQrj
+      w0ms8i4f/nKe/gA8W99CUXVCQf9+7PLzx2xu5/BpNnOPn1N3VAqpNRaWVokODuPT9loCXZv5
+      Rw/ZLdVJ9MV5eP8DlMgQPq/KBz9/wNTE2H774srSc1I7KUomWMU0TxeWQPeTTW2zvLRAMDG0
+      3/i++PQx2VyWiqmws/ac5bVtErEgDx/OUahYh74Dh/kHj8hmMyiGn2eP50jlSkSCKj+//4Cx
+      iTHUve+28bk+ZmcnTShsMPfoMaWag1XOsbK6jqP6iYb3WmNdi4cPHlKsWSh2mYdPlhkdHmTu
+      04/ZTBcYSg7sr1e9nGfu8TNsVHLba6ytb2AYBvOPn1B8KVfYTW3wdHkVwxfCMwvcf7hAzA/P
+      l1YoVi364o1TqVx6g+WVTTL5EhHd4dP5p1Qtj1ohzerqKu7etnUqt0JovhC3bt9ifWEO24hw
+      a7qPR09WmL72Bp5Veyl2q1DHsEo4rsV6Ko9PcckWqty79xb59MHzHGuFLEZsiBvXrlBOb4Dm
+      p1Yt4vr6mRqJs1s4uCCXWV1m5PodrowPs7GyhB4IgaIyNjyI9Znz4lKxQL1uYpoWlqtyc2qA
+      3brK5OgAoXDspZbdrVSWoOJiui7PV7aIBnSKpTKebaNqhw+mFpW6wu3b10mn89x96x71Ypaq
+      rfGFu5NsrB5cki+lNwkNT3Pt6hS72ysoRgjTcllcWiMUfvmR6nXb49qNGxRz22RKVe69eYd8
+      LsfU1DSa7iPqPzhFKBXzmKaJaZq4qsGNkTBPFlaZvHkPz64cWqpHIZ/HNOsUU5vEx6+R8Ds4
+      eoREOPjSM3c816aQL1Cv1cikdrhy+00cs8TQ2CTxkIFz6MEB+Y1l+qZvMTs9QTSRJGB4eGYW
+      IzpF3K9SPzSV7Ob6BrO37zA+PMDkzCyG6rC5nebazTdQrOpLj2jZTO1y9/Yb9EUDrG5kCPga
+      TycZSyawrIPvtmZajE/NEKbCo5UUd9+8h1UpMjI+TdSv7+d6avcCWbUyih7Atizq1To+n45p
+      WdjOweMtPKfKztY22fQOy4vLuKrO9k4G27FxHBPXO/hCNV2jVq3iuS47mV1ss8JuoYRj1THr
+      Juqh80PDr1Mp13Bdl3yxRLWYI1+qvfQEhBf84Tg3rl+lXMxjOzamaaGpCisr60xOTexv/57n
+      sLW9jVnL8fTJApbrsbOTIpIc542b11ldenZoqRqWVcdzXTQc6paD7bo4joVZqaH6Dx7kofsM
+      quXGeqWzBexakWxqnarlkd3ZpmK+XLCe62DbHp7jYNsWrgf57WWiw9MvNaIHo/1cn52hVNzF
+      tm2qdYuAT6NeN3E+84iR/qExpsaSlKtV6rU6pmVj6PqRzywYm5phMAwVW8E0bRzbZuX5E9TY
+      MONDfYe+A4Nyqdz4PaDrjc9RNbCtKqZtv7ThaSrU6hau6/L44aeMzNwmGdGpWvZL20tjm7Gx
+      XY9qMYPpQGpnh53NVVIljxtXJ19O1vOo1CyCmtf4DhyHpWdz+AcmGetvDN2f6CnQC4XcDtmi
+      xbVrs6h2hVxN4+a1KVIbK8T7R4iEGyMZTr3GwMQMV6dGUfxRpsaGSMRiDA3EWFhaZ2pmBp/e
+      +Kg0I4BT3WV9O8fszRv0J+JE44MYXoWKrTM61L//hQUicXIbi+SrDjeuXyeeiBMP+1he2aZW
+      q9I3MLA/s4ldK7G2mWJkfIqITyFdcZkcHQRFJx4NH3yWrkM0keTKzCy6rnFlapJEPIah2Cws
+      rTI8NkU4+GKPrWCoDgvLm0zOTLG+tMDw+BWifoX1bJ3Z6WHUvWR1f5h6fputTIlrN2/Ql4iT
+      6BticnyYeCJBPHKQg2tWWFnfZnpmlv5ogKWVDSavzGA6HiMD8Zd+K9QreTa2M4xPThNQXfK2
+      zuzMFJn1JWKDo0RCB6NJ+ewOubLFzPWbmLvbaKEEhlMhs1vActWDz0FR2N5Yw/HFuDYzwc7q
+      En1D49i1EqViEc0XIrhX3EYoTjm9RjpfxakWKJQqaIEEulNCDcToj0f3v69oLM760jNqNjj1
+      OsVikeTYBJmNFWIDo0TDB7nGoiGePXuKPzbElclR4vE42CalcgnLU4mGG49tUT2XldUV+ken
+      mBpLsrywQHJ0ErPayFUPRAj4dP4/bKbIUkEPxfYAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

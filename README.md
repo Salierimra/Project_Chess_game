@@ -19,7 +19,7 @@ Improve my chess skills through data-driven insights with Tableau visualization.
 
 ## Technologies Used
 - Python(numpy,pandas,chess.com API)
-- Power BI 
+- Tableau
 
 ## Findings
 - Which opening should i train ?
